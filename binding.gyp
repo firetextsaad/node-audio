@@ -1,7 +1,7 @@
 {
   "variables": {
-    "libwebm_root%": "/opt/works/libwebm",
-    "libwebm_lib_path%": "/opt/works/libwebm",
+    "libwebm_root%": "/usr/local/opt/libwebm",
+    "libwebm_lib_path%": "/usr/local/opt/libwebm",
     "targetarch%": "amd64",
   },
   "targets": [
@@ -34,7 +34,7 @@
         'include_dirs': ['<(libwebm_root)', '.'],
         'link_settings': {
           'libraries': [
-            '<(libwebm_lib)\\libwebm.lib',
+            '<(libwebm_lib_path)\\libwebm.lib',
           ]
        },
       }
@@ -79,7 +79,7 @@
         'link_settings': {
           'libraries': [
             '-lwebm', 
-            '-L<(libwebm_lib)',
+            '-L<(libwebm_lib_path)',
           ]
         },
         'xcode_settings': {
@@ -94,7 +94,7 @@
         'include_dirs': ['<(libwebm_root)'],
         'link_settings': {
           'libraries': [
-            '<(libwebm_lib)\\libwebm.lib',
+            '<(libwebm_lib_path)\\libwebm.lib',
           ]
        },
       }
