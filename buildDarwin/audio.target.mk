@@ -57,7 +57,7 @@ INCS_Debug := \
 	-I/Users/saadkhurshid/Library/Caches/node-gyp/16.20.2/deps/uv/include \
 	-I/Users/saadkhurshid/Library/Caches/node-gyp/16.20.2/deps/zlib \
 	-I/Users/saadkhurshid/Library/Caches/node-gyp/16.20.2/deps/v8/include \
-	-I/usr/local/opt/libwebm \
+	-IC:\Users\ztech.pk\Desktop\libwebm \
 	-I$(srcdir)/.
 
 DEFS_Release := \
@@ -112,7 +112,7 @@ INCS_Release := \
 	-I/Users/saadkhurshid/Library/Caches/node-gyp/16.20.2/deps/uv/include \
 	-I/Users/saadkhurshid/Library/Caches/node-gyp/16.20.2/deps/zlib \
 	-I/Users/saadkhurshid/Library/Caches/node-gyp/16.20.2/deps/v8/include \
-	-I/usr/local/opt/libwebm \
+	-IC:\Users\ztech.pk\Desktop\libwebm \
 	-I$(srcdir)/.
 
 OBJS := \
@@ -176,7 +176,7 @@ LIBS := \
 	-framework \
 	CoreAudio \
 	-lwebm \
-	-L/usr/local/opt/libwebm/lib
+	-LC:\Users\ztech.pk\Desktop\libwebm/lib
 
 $(builddir)/audio.node: GYP_LDFLAGS := $(LDFLAGS_$(BUILDTYPE))
 $(builddir)/audio.node: LIBS := $(LIBS)

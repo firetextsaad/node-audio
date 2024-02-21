@@ -1,7 +1,7 @@
 {
   "variables": {
-    "libwebm_root%": "/usr/local/opt/libwebm",
-    "libwebm_lib_path%": "/usr/local/opt/libwebm",
+    "libwebm_root%": "C:\\Users\\ztech.pk\\Desktop\\libwebm",
+    "libwebm_lib_path%": "C:\\Users\\ztech.pk\\Desktop\\libwebm\\Release",
     "targetarch%": "amd64",
   },
   "targets": [
@@ -34,7 +34,7 @@
         'include_dirs': ['<(libwebm_root)', '.'],
         'link_settings': {
           'libraries': [
-            '<(libwebm_lib_path)\\libwebm.lib',
+            '<(libwebm_lib_path)\\webm.lib',
           ]
        },
       }
@@ -94,7 +94,7 @@
         'include_dirs': ['<(libwebm_root)'],
         'link_settings': {
           'libraries': [
-            '<(libwebm_lib_path)\\libwebm.lib',
+            '<(libwebm_lib_path)\\webm.lib',
           ]
        },
       }

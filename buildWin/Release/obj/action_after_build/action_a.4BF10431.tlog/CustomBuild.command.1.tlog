@@ -1,0 +1,6 @@
+^C:\USERS\ZTECH.PK\DESKTOP\NODE-AUDIO\BUILD\RELEASE\AUDIO.NODE
+call mkdir "C:\Users\ztech.pk\Desktop\node-audio\x64" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Users\ztech.pk\Desktop\node-audio\build\Release\audio.node" "C:\Users\ztech.pk\Desktop\node-audio\x64\audio.node"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\USERS\ZTECH.PK\DESKTOP\NODE-AUDIO\BUILD\RELEASE\WEBM.DLL
+call mkdir "C:\Users\ztech.pk\Desktop\node-audio\x64" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Users\ztech.pk\Desktop\node-audio\build\Release\webm.dll" "C:\Users\ztech.pk\Desktop\node-audio\x64\webm.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%

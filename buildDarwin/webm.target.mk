@@ -56,7 +56,7 @@ INCS_Debug := \
 	-I/Users/saadkhurshid/Library/Caches/node-gyp/16.20.2/deps/uv/include \
 	-I/Users/saadkhurshid/Library/Caches/node-gyp/16.20.2/deps/zlib \
 	-I/Users/saadkhurshid/Library/Caches/node-gyp/16.20.2/deps/v8/include \
-	-I/usr/local/opt/libwebm
+	-IC:\Users\ztech.pk\Desktop\libwebm
 
 DEFS_Release := \
 	'-DNODE_GYP_MODULE_NAME=webm' \
@@ -109,7 +109,7 @@ INCS_Release := \
 	-I/Users/saadkhurshid/Library/Caches/node-gyp/16.20.2/deps/uv/include \
 	-I/Users/saadkhurshid/Library/Caches/node-gyp/16.20.2/deps/zlib \
 	-I/Users/saadkhurshid/Library/Caches/node-gyp/16.20.2/deps/v8/include \
-	-I/usr/local/opt/libwebm
+	-IC:\Users\ztech.pk\Desktop\libwebm
 
 OBJS := \
 	$(obj).target/$(TARGET)/webvtt/vttreader.o \
@@ -167,7 +167,7 @@ LIBTOOLFLAGS_Release := \
 
 LIBS := \
 	-lwebm \
-	-L/usr/local/opt/libwebm
+	-LC:\Users\ztech.pk\Desktop\libwebm
 
 $(builddir)/webm.dylib: GYP_LDFLAGS := $(LDFLAGS_$(BUILDTYPE))
 $(builddir)/webm.dylib: LIBS := $(LIBS)
