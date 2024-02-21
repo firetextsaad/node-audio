@@ -37,8 +37,8 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 
-/build
-/build2
-/build32
-/build64
+# /build
+# /build2
+# /build32
+# /build64
 /test
