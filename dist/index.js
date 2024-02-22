@@ -1,7 +1,7 @@
 "use strict";
 
 var EventEmitter = require('events');
-var audio = require('../build/Release/audio.node');
+var audio = require('../buildWin/Release/audio.node');
 var init = function init(mic) {
   var events = new EventEmitter();
   var data = {
@@ -67,7 +67,7 @@ var init = function init(mic) {
    * Mute/Unmute volume.
    */
   var toggle = function toggle() {
-    if (audio.isMuted(mic)) unmute();else mute();
+    if (audio.isMuted(mic)) unmute(); else mute();
   };
 
   /**
